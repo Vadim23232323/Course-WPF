@@ -1,0 +1,38 @@
+﻿<Window x:Class="calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculator"
+        mc:Ignorable="d"
+      Title="Calculator" Height="312" Width="275" ResizeMode="NoResize">
+    <Grid 
+                                                                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Margin="0,0,0,0" HorizontalAlignment="Left" Width="578" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btn_dot" Content="."  Margin="86,236,450,0" VerticalAlignment="Top"  Height="30" Click="btn_dot_Click"/>
+        <Button Name="btn_result" Content="="  Margin="140,236,346,0" VerticalAlignment="Top" Height="30" Click="Button_Click"/>
+        <Button Name="btn_number0" Content="0"  Margin="32,236,504,0" VerticalAlignment="Top" Height="30" Click="btn_number0_Click"/>
+        <Button Name="btn_number7" Content="7"  Margin="32,103,504,0" VerticalAlignment="Top" Height="30" Click="btn_number7_Click"/>
+        <Button Name="btn_number8" Content="8"  Margin="86,103,450,0" VerticalAlignment="Top" Height="30" Click="btn_number8_Click"/>
+        <Button Name="btn_number9" Content="9"  Margin="140,103,396,0" VerticalAlignment="Top" Height="30" Click="btn_number9_Click"/>
+        <Button Name="btn_difference" Content="-"  Margin="192,103,346,0" VerticalAlignment="Top" Height="30" Click="btn_difference_Click"/>
+        <Button Name="btn_number4" Content="4"  Margin="32,150,504,0" VerticalAlignment="Top" Height="30" Click="btn_number4_Click"/>
+        <Button Name="btn_number5" Content="5"  Margin="86,150,450,0" VerticalAlignment="Top" Height="30" Click="btn_number5_Click"/>
+        <Button Name="btn_number6" Content="6"  Margin="140,150,396,0" VerticalAlignment="Top" Height="30" Click="btn_number6_Click"/>
+        <Button Name="btn_multiply" Content="*"  Margin="190,150,346,0" VerticalAlignment="Top" Height="30" Click="btn_multiply_Click"/>
+        <Button Name="btn_number1" Content="1"  Margin="32,192,504,0" VerticalAlignment="Top" Height="30" Click="btn_number1_Click"/>
+        <Button Name="btn_number2" Content="2"  Margin="86,192,450,0" VerticalAlignment="Top" Height="30" Click="btn_number2_Click"/>
+        <Button Name="btn_number3" Content="3"  Margin="140,192,396,0" VerticalAlignment="Top" Height="30" Click="btn_number3_Click"/>
+        <Button Name="btn_divide" Content="/"  Margin="190,192,346,0" VerticalAlignment="Top" Height="30" Click="btn_divide_Click"/>
+        <Button Name="btn_clear" Content="C"  Margin="32,59,504,0" VerticalAlignment="Top" Height="30" Click="btn_clear_Click"/>
+        <Button Name="btn_erase" Content="&lt;--"  Margin="86,59,450,0" VerticalAlignment="Top" Height="30" Click="btn_erase_Click"/>
+        <Button Name="btn_minus" Content="+/-"  Margin="140,59,396,0" VerticalAlignment="Top" Height="30" Click="btn_minus_Click"/>
+        <Button Name="btn_sum" Content="+"  Margin="190,59,346,0" VerticalAlignment="Top" Height="30" Click="btn_sum_Click"/>
+        <TextBox Name="tb_result"  Margin="32,10,346,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" FontSize="20"/>
+        <Label Name="lab_operation"  Visibility="Hidden" Content="Label"  Margin="261,67,176,0" VerticalAlignment="Top" Height="26"/>
+
+
+    </Grid>
+</Window>
